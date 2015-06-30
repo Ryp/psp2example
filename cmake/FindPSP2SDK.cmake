@@ -17,26 +17,22 @@ if(NOT CMAKE_CROSSCOMPILING)
 endif()
 
 find_path(PSP2SDK_PATH
-    NAMES
-        psp2.x
+    NAMES psp2.x
     HINTS
         $ENV{PSP2SDK}
         /opt/psp2sdk
+        /opt/devkitpro/devkitARM/psp2
 )
 
 find_program(PSP2SDK_FIXUP_BIN
-    NAMES
-        psp2-fixup
-    HINTS
-        ${PSP2SDK_PATH}
+    NAMES psp2-fixup
+    HINTS ${PSP2SDK_PATH}
     PATH_SUFFIXES bin
 )
 
 find_path(PSP2SDK_INCLUDE_DIR
-    NAMES
-        psp2/gxm.h
-    HINTS
-        ${PSP2SDK_PATH}
+    NAMES psp2/gxm.h
+    HINTS ${PSP2SDK_PATH}
     PATH_SUFFIXES include
 )
 
