@@ -1,2 +1,4 @@
 # psp2example
-Homebrew exampe using cmake
+Homebrew example using cmake
+
+Thanks to [xerpi](https://github.com/xerpi) for his vitahelloworld !

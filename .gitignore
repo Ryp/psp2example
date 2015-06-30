@@ -1,0 +1,5 @@
+!.gitignore
+
+# Ryp custom
+*.kdev4*
+build
