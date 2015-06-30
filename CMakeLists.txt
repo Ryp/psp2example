@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 2.8.11 FATAL_ERROR)
 project(example)
 
-# FIXME FIXME FIXME
-list(APPEND CMAKE_MODULE_PATH "~/Dev/C++/PSVita/psp2sdk/src/cmake")
+# Make cmake search for FindPSP2SDK.cmake script in this directory
+# This may be installed in your system by psp2sdk in the future
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 # Search for psp2sdk
 find_package(PSP2SDK REQUIRED)

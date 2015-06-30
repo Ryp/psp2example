@@ -145,7 +145,7 @@ void draw_pixel(uint32_t x, uint32_t y, uint32_t color)
 
 void draw_rectangle(uint32_t x, uint32_t y, uint32_t w, uint32_t h, uint32_t color)
 {
-	int i, j;
+	uint32_t i, j;
 	for (i = 0; i < h; i++) {
 		for (j = 0; j < w; j++) {
 			((uint32_t *)fb[cur_fb].base)[(x + j) + (y + i)*fb[cur_fb].pitch] = color;
